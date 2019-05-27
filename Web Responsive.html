@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+.first {
+  background-color:powderblue;
+  padding:5px;
+  float:left;
+  margin-right: 0px;
+  box-sizing: border-box;
+  width:25%; /* The width is 20%, by default */
+}
+
+.second {
+  background-color:lightgreen;
+  padding:5px;
+  float:left;
+  margin-right: 0px;
+  box-sizing: border-box;
+  width:50%; /* The width is 20%, by default */
+}
+
+
+@media screen and (max-width:400px) {
+  /* For mobile phones: */
+  .second{
+    width:100%;
+  }
+  .first{
+  	width: 50%;
+  }
+ @media screen and (min-width:401px) {
+  /* For web: */
+  .second{
+    width:50%;
+  }
+  .first{
+  	width:25%;
+  }
+}
+</style>
+</head>
+<body style="font-family: verdana">
+	<div style="background-color:skyblue;padding:5px;text-align:center;font-size: 20px">
+  		<h1>The Basic</h1>
+  		<p>Basic of the web</p>
+	</div>
+	
+	<center><img src="img/alam.jpg" style="max-width:100%;height:auto;"></center>
+	
+	<div class="first"; style="font-size: 2vw">
+		<p>One</p>
+	</div>
+
+	<div class="first"; style="font-size: 2vw">
+		<p>Two</p>
+	</div>
+
+	<div class="first"; style="font-size: 2vw">
+		<p>Three</p>
+	</div>
+
+	<div class="first"; style="font-size: 2vw">
+		<p>Four</p>
+	</div>
+
+	<br>
+
+	<div class="second"; style="font-size: 2vw;text-align: center;">
+		<p>This is WEB</p>
+	</div>
+
+	<div class="second"; style="font-size: 2vw;text-align: center;">
+		<p>Try This</p>
+	</div>
+</body>
+</html>
